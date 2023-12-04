@@ -37,5 +37,12 @@ const myFunc: (i:number)=> void = (i: number) =>{
   console.log(i);
 }
 
+// Type of Any
+const json = "{'x': 10, 'y': 20}";
+const coodinates = JSON.parse(json);
 
+// Fix it
+const json2 = "{'a': 10, 'b': 20}";
+const coodinates2: { a: number; b: number} = JSON.parse(json2);
+console.log(coodinates2);
 
