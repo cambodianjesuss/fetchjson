@@ -62,3 +62,13 @@ for (let i = 0; i < numbers.length; i++){
 
 // Type inference for function
 // TypeScript will try to figure out what type a value a function will return
+
+// Previously the example above was annotating the variable itself, we want to annotate the function
+// const myFunc: (i:number)=> void = (i: number) =>{
+//   console.log(i);
+// }
+
+// Type annotations is for both arguments and return
+// Whereas function inference only trys to figure out the return type
+
+// Refer to functions.ts in directory
