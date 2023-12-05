@@ -55,3 +55,10 @@ for (let i = 0; i < numbers.length; i++){
     numbersAboveZero = numbers[i];
   }
 }
+
+// Type annotations for functions
+// Code we add to tell TypeScript what time of arguments a function will recieve
+// and what the type of values it will return
+
+// Type inference for function
+// TypeScript will try to figure out what type a value a function will return
