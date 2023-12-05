@@ -46,3 +46,12 @@ const json2 = "{'a': 10, 'b': 20}";
 const coodinates2: { a: number; b: number} = JSON.parse(json2);
 console.log(coodinates2);
 
+// Variables whose type cannot be inferred correctly
+let numbers = [-10, -1, 12];
+let numbersAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++){
+  if(numbers[i] > 0){
+    numbersAboveZero = numbers[i];
+  }
+}
