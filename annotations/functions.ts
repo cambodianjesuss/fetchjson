@@ -16,3 +16,11 @@ const sub = (x: number, y: number): number => {
 const mult = (a: number, b: number) => {
   a * b;
 }
+
+function divide(a: number, b: number): number {
+  return a/b;
+}
+
+const divider = function(a: number, b: number){
+  return a/b;
+}
