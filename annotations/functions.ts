@@ -11,3 +11,8 @@ const add = (a: number, b: number): boolean => {
 const sub = (x: number, y: number): number => {
   return x - y;
 }
+
+// If we don't add return type, TS will infer as VOID
+const mult = (a: number, b: number) => {
+  a * b;
+}
