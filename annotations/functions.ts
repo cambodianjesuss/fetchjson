@@ -24,3 +24,13 @@ function divide(a: number, b: number): number {
 const divider = function(a: number, b: number){
   return a/b;
 }
+
+// Can return null or undefined or just no return
+const logger = (message: string): void =>{
+  console.log(message)
+}
+
+// Using the never return type -- rare edge case
+const throwError = (message: string): never =>{
+  throw new Error(message)
+}
