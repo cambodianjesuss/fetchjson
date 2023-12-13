@@ -21,6 +21,6 @@ function divide(a: number, b: number): number {
   return a/b;
 }
 
-const divider1 = function(a: number, b: number){
+const divider = function(a: number, b: number){
   return a/b;
 }
