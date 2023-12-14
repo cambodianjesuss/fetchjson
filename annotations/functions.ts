@@ -34,3 +34,26 @@ const logger = (message: string): void =>{
 const throwError = (message: string): never =>{
   throw new Error(message)
 }
+
+// Annotating an object as argument
+
+const todaysWeather = {
+  date: new Date(),
+  weather: 'sunny'
+}
+
+const logWeather = (forecast: {date: Date, weather: String }): void => {
+  console.log(forecast.date);
+  console.log(forecast.weather);
+}
+
+logWeather(todaysWeather);
+
+// Clean it up
+
+const logWeather2 = ({date, weather}: {date: Date, weather: String}):void => {
+  console.log(date);
+  console.log(weather);
+}
+
+logWeather2(todaysWeather);
